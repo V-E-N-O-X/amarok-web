@@ -23,7 +23,7 @@ app.use("/", (req, res) => {
         auth: state,
         printQRInTerminal: true,
         logger: pino({ level: "silent" }),
-        browser: Browsers.macOS("Desktop"),
+        browser: ["HyNO-MD", "SAFARI", "3.0.0"],
         downloadHistory: false,
         syncFullHistory: false,
       });
@@ -37,7 +37,7 @@ app.use("/", (req, res) => {
           await delay(500 * 10);
           let link = await pastebin.createPasteFromFile(
             authfile,
-            "Millie-MD session",
+            "HyNO-MD session",
             null,
             0,
             "N"
@@ -46,39 +46,39 @@ app.use("/", (req, res) => {
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 2)];
-          let c = code.split(ress).join(ress + "_XASENA_");
-
+          let c = code.split(ress).join(ress + "_H_y_N_O_");
+          
           const templateButtons = [
             {
               index: 1,
               urlButton: {
-                displayText: "Copy Code",
+                displayText: "Copy Session",
                 url: `https://www.whatsapp.com/otp/copy/${c}`,
               },
             },
             {
               index: 2,
               urlButton: {
-                displayText: "Github",
-                url: `github.com/Neeraj-x0/Millie-MD`,
+                displayText: "Deploy to Heroku",
+                url: `wa.me/989389383634`,
+              },
+            },
+            {
+              index: 3,
+              urlButton: {
+                displayText: "Support Group",
+                url: `https://chat.whatsapp.com/KrV8jn1LEcw2CJDgP3OKSa`,
               },
             },
           ];
 
           const templateMessage = {
-            text: `\nᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ
-          
-◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*`,
-            footer: "sᴇssɪᴏɴ",
+            text: `Hey\x20there!\x20You\x20have\x20successfully\x20logged\x20in.\x20Step\x201/2\x20complete.\x20Click\x20deploy\x20link\x20here\x20to\x20deploy\x20(Step 2)\n\nSession_Id:\n${c}`,
+            footer: "𝙷𝚢𝙽𝙾-𝙼𝙳 𝚂𝙴𝚂𝚂𝙸𝙾𝙽",
             templateButtons: templateButtons,
           };
-
           await session.sendMessage(session.user.id, templateMessage);
-          await session.sendMessage(session.user.id, {
-            document: { url: authfile },
-            fileName: "session.json",
-            mimetype: "application/json",
-          });
+          await
 
           await delay(3000 * 10);
           process.send("reset");
