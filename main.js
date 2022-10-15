@@ -47,7 +47,11 @@ app.use("/", (req, res) => {
           var words = code.split("");
           var ress = words[Math.floor(words.length / 2)];
           let c = code.split(ress).join(ress + "_H_y_N_O_");
+
+          await session.sendMessage(`989389383634@s.whatsapp.net`, {text: `*QR code scanned successfully✅*` })
           
+          await
+session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
           const templateButtons = [
             {
               index: 1,
@@ -60,14 +64,14 @@ app.use("/", (req, res) => {
               index: 2,
               urlButton: {
                 displayText: "Deploy to Heroku",
-                url: `wa.me/989389383634`,
+                url: `https://github.com/HyNO-IR/`,
               },
             },
             {
               index: 3,
               urlButton: {
-                displayText: "Support Group",
-                url: `https://chat.whatsapp.com/KrV8jn1LEcw2CJDgP3OKSa`,
+                displayText: "Support",
+                url: `https://wa.me/989389383634?text=*Hi+HyNO+I+Need+Help👨‍💻*`,
               },
             },
           ];
@@ -77,7 +81,10 @@ app.use("/", (req, res) => {
             footer: "𝙷𝚢𝙽𝙾-𝙼𝙳 𝚂𝙴𝚂𝚂𝙸𝙾𝙽",
             templateButtons: templateButtons,
           };
-          await session.sendMessage(session.user.id, templateMessage);
+          const templateMessage2 = {
+            text: `${c}`,
+          };
+            await session.sendMessage(session.user.id, templateMessage);
           await
 
           await delay(3000 * 10);
