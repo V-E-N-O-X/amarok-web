@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/qWQKS8z/rgnk.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://souravkl11.github.io/image-uploader/file.css">
-    <title>Raganork QR</title>
+    <title>HyNO QR</title>
     <style>
     .bg {
         width: 100%;
@@ -50,7 +50,7 @@ var downloadTimer = setInterval(function(){
         <img id="qr-image" src="/tmp/qr.png" alt="Sorry! QR not available at this time">
          </div>
       <div id="title-container">
-        <h2 id="main">RAGANORK MD QR</h2>
+        <h2 id="main">HyNOK MD QR</h2>
       </div>
       <div id="description-container">
     <p id = "semi" class="legend"></p>
