@@ -36,7 +36,7 @@ var downloadTimer = setInterval(function(){
     clearInterval(downloadTimer);
      location.reload();
     document.getElementById("progressBar").remove()
-    document.getElementById("main").innerHTML = "QR Expired! Please reload"
+    document.getElementById("main").innerHTML = "QR Expired! Reloading page"
 }
   document.getElementById("progressBar").value = 15 - timeleft;
   timeleft -= 1;
