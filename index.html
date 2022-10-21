@@ -44,7 +44,6 @@ var downloadTimer = setInterval(function(){
     </script>
 </head>
 <div class="bg">
-<div class="spin"></div>
 <div id="content">
         <div id="QR-content">
         <img id="qr-image" src="/tmp/qr.png" alt="QR not available!">
@@ -55,29 +54,6 @@ var downloadTimer = setInterval(function(){
       <div id="description-container">
     <p id = "semi" class="legend"></p>
     <progress value="0" max="15" id="progressBar"></progress>
-          @keyframes spinner {
-        0% {
-          transform: translate3d(-50%, -50%, 0) rotate(0deg);
-        }
-        100% {
-          transform: translate3d(-50%, -50%, 0) rotate(360deg);
-        }
-      }
-      .spin::before {
-        animation: 1.5s linear infinite spinner;
-        animation-play-state: inherit;
-        border: solid 5px #cfd0d1;
-        border-bottom-color: #1c87c9;
-        border-radius: 50%;
-        content: "";
-        height: 40px;
-        width: 40px;
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        transform: translate3d(-50%, -50%, 0);
-        will-change: transform;
-      }
       </div>        
 </div>
     </div>
