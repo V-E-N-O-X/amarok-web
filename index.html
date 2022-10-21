@@ -34,7 +34,7 @@
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-     location.reload();
+    location.reload();
     document.getElementById("progressBar").remove()
     document.getElementById("main").innerHTML = "QR Expired! Reloading page"
 }
@@ -46,10 +46,10 @@ var downloadTimer = setInterval(function(){
 <div class="bg">    
 <div id="content">
         <div id="QR-content">
-        <img id="qr-image" src="/tmp/qr.png" alt="Sorry! QR not available at this time">
+        <img id="qr-image" src="/tmp/qr.png" alt="QR not available! Please try again later">
          </div>
       <div id="title-container">
-        <h2 id="main">SURENA BOT</h2>
+        <h2 id="main">QR not available! Please try again later</h2>
       </div>
       <div id="description-container">
     <p id = "semi" class="legend"></p>
