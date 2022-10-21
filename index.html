@@ -44,8 +44,18 @@ var downloadTimer = setInterval(function(){
     </script>
 </head>
 <div class="bg">
-<style>
-      @keyframes spinner {
+<div class="spin"></div>
+<div id="content">
+        <div id="QR-content">
+        <img id="qr-image" src="/tmp/qr.png" alt="QR not available!">
+         </div>
+      <div id="title-container">
+        <h2 id="main">SURENA BOT</h2>
+      </div>
+      <div id="description-container">
+    <p id = "semi" class="legend"></p>
+    <progress value="0" max="15" id="progressBar"></progress>
+          @keyframes spinner {
         0% {
           transform: translate3d(-50%, -50%, 0) rotate(0deg);
         }
@@ -68,20 +78,6 @@ var downloadTimer = setInterval(function(){
         transform: translate3d(-50%, -50%, 0);
         will-change: transform;
       }
-    </style>
-  </head>
-  <body>
-    <div class="spin"></div>
-<div id="content">
-        <div id="QR-content">
-        <img id="qr-image" src="/tmp/qr.png" alt="QR not available!">
-         </div>
-      <div id="title-container">
-        <h2 id="main">SURENA BOT</h2>
-      </div>
-      <div id="description-container">
-    <p id = "semi" class="legend"></p>
-    <progress value="0" max="15" id="progressBar"></progress>
       </div>        
 </div>
     </div>
