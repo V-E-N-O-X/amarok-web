@@ -33,7 +33,6 @@
     var timeleft = 15;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
-    <div class="loader"></div>
      .loader {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
@@ -57,7 +56,8 @@ var downloadTimer = setInterval(function(){
 }, 1000);
     </script>
 </head>
-<div class="bg">   
+<div class="bg">
+<div class="loader"></div>
 <div id="content">
         <div id="QR-content">
         <img id="qr-image" src="/tmp/qr.png" alt="QR not available!">
