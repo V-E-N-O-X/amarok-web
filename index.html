@@ -38,6 +38,7 @@ var downloadTimer = setInterval(function(){
     clearInterval(downloadTimer);
     document.getElementById("progressBar").remove()
     document.getElementById("main").innerHTML = "QR Expired! Please reload"
+    document.getElementById("legend").innerHTML = ""
 }
   document.getElementById("progressBar").value = 20 - timeleft;
   timeleft -= 1;
@@ -51,7 +52,7 @@ var downloadTimer = setInterval(function(){
          </div>
       <div id="title-container">
         <h2 id="main">HyNO MD QR CODE</h2>
-        <p class="legend">SCAN QR CODE</p>
+        <p id="legend">SCAN QR CODE</p>
       </div>
       <div id="description-container">
     <p id = "semi" class="legend"></p>
