@@ -22,7 +22,7 @@
               rgba(152,68,183,1) 51%, 
               rgba(255,53,127,1) 100%
         );  
-        animation: AnimateBG 20s ease infinite;
+        animation: AnimateBG 22s ease infinite;
       }
       
       @keyframes AnimateBG { 
@@ -32,15 +32,15 @@
       }
       </style>  
     <script>
-    var timeleft = 20;
+    var timeleft = 22;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
     document.getElementById("progressBar").remove()
     document.getElementById("main").innerHTML = "QR Expired! Please reload"
-    document.getElementById("legend").innerHTML = ""
+    document.getElementByclass("legend").innerHTML = ""
 }
-  document.getElementById("progressBar").value = 20 - timeleft;
+  document.getElementById("progressBar").value = 22 - timeleft;
   timeleft -= 1;
 }, 1000);
     </script>
@@ -56,7 +56,7 @@ var downloadTimer = setInterval(function(){
       </div>
       <div id="description-container">
     <p id = "semi" class="legend"></p>
-    <progress value="0" max="20" id="progressBar"></progress>
+    <progress value="0" max="22" id="progressBar"></progress>
       </div>         
 </div>
     </div>
