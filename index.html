@@ -1,4 +1,4 @@
-<html lang="en"><head>
+    <html lang="en"><head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8736240299050572"
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/HB9ygVJ/HyNO.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://souravkl11.github.io/image-uploader/file.css">
-    <title>SURENA QR</title>
+    <title>HyNO QR</title>
     <style>
     .bg {
         width: 100%;
@@ -17,10 +17,12 @@
         background-size: 300% 300%;
         background-image: linear-gradient(
               -45deg, 
-              rgba(21,24,31,1) 100%, 
-              rgba(80,84,93,1) 50%, 
+              rgba(59,173,227,1) 0%, 
+              rgba(87,111,230,1) 25%, 
+              rgba(152,68,183,1) 51%, 
+              rgba(255,53,127,1) 100%
         );  
-        animation: AnimateBG 15s ease infinite;
+        animation: AnimateBG 20s ease infinite;
       }
       
       @keyframes AnimateBG { 
@@ -30,34 +32,33 @@
       }
       </style>  
     <script>
-    var timeleft = 15;
+    var timeleft = 20;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
     location.reload();
     document.getElementById("progressBar").remove()
-    document.getElementById("main").innerHTML = "QR Expired! Reloading..."
+    document.getElementById("main").innerHTML = "QR Expired! Please reload"
 }
-  document.getElementById("progressBar").value = 15 - timeleft;
+  document.getElementById("progressBar").value = 20 - timeleft;
   timeleft -= 1;
 }, 1000);
     </script>
 </head>
-<div class="bg">
+<div class="bg">    
 <div id="content">
         <div id="QR-content">
-        <img id="qr-image" src="/tmp/qr.png" alt="QR available!">
+        <img id="qr-image" src="/tmp/qr.png" alt="HyNO MD QR CODE">
          </div>
       <div id="title-container">
-        <h2 id="main">SURENA BOT</h2>
+        <h2 id="main">HyNO MD QR</h2>
       </div>
       <div id="description-container">
     <p id = "semi" class="legend"></p>
-    <progress value="0" max="15" id="progressBar"></progress>
-      </div>
-     <a href="/tmp/qr.png">Click here if you can't get full QR</a>        
+    <progress value="0" max="20" id="progressBar"></progress>
+      </div>  
+        <a href="/tmp/qr.png">Click here if you can't get full QR</a>       
 </div>
     </div>
   </div>
   </body>
-</body>
