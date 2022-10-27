@@ -53,7 +53,7 @@ body{
     margin-bottom: 2rem;
 }
 
-p.legend {
+#p.legend {
     color: hsl(220, 15%, 55%);
     font-size: 1em;
     font-weight: 400;
