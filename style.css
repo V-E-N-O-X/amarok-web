@@ -27,7 +27,7 @@ body{
 #content{
     display: flex;
     flex-direction: column;
-    width: 22rem;
+    width: 20rem;
     text-align: center;
     background-color: #000000;
     padding: 1rem;
@@ -36,7 +36,7 @@ body{
 
 #QR-content img{
     border-radius: 10px;
-    width: 20rem;
+    width: 18rem;
 }
 
 #title-container{
