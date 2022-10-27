@@ -39,6 +39,11 @@ body{
     width: 20rem;
 }
 
+#hyno-content img{
+    border-radius: 10px;
+    width: 20rem;
+}
+
 #title-container{
     padding: 1rem 1rem 0 1rem;
     color: #fff;
