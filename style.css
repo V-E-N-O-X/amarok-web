@@ -27,16 +27,16 @@ body{
 #content{
     display: flex;
     flex-direction: column;
-    width: 24rem;
+    width: 22rem;
     text-align: center;
     background-color: #000000;
     padding: 1rem;
-    border-radius: 14px;
+    border-radius: 12px;
 }
 
 #QR-content img{
-    border-radius: 7px;
-    width: 22rem;
+    border-radius: 5px;
+    width: 20rem;
 }
 
 #title-container{
