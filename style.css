@@ -25,18 +25,19 @@ body{
 
 
 #content{
+    border-radius: 1em;
+    background-color: #141414;
+    width: 21em;
+    height: 28em;
     display: flex;
     flex-direction: column;
-    width: 20rem;
-    text-align: center;
-    background-color: #000000;
-    padding: 1rem;
-    border-radius: 0.3em;;
+    align-items: center;
 }
 
 #QR-content img{
+    width: 19em;
     border-radius: 0.3em;
-    width: 14rem;
+    margin-top: 1em;
 }
 
 #title-container{
