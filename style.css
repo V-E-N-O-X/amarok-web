@@ -27,7 +27,7 @@ body{
 #content{
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 21rem;
     text-align: center;
     background-color: #000000;
     padding: 1rem;
@@ -36,14 +36,14 @@ body{
 
 #QR-content img{
     border-radius: 10px;
-    width: 18rem;
+    width: 19rem;
 }
 
 #title-container{
-    padding: 0.1rem 0.1rem 0 0.1rem;
+    padding: 1rem 1rem 0 1rem;
     color: #fff;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 #description-container{
