@@ -11,28 +11,17 @@
 </head>
 <style>
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Outfit";
-    background: linear-gradient(-45deg, #52aaee, #10e826, #3f10e8, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        height: 100vh;
+        width: 100vw;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+    }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+    @media (min-width:600px) {
+        body {
+            align-items: center;
+        }
 
         .container {
             width: 50%;
