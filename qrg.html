@@ -1,21 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
+
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="QR code generator.">
+<meta name="keywords" content="qrcode, qr, generator, qr generator, ming, Ming, Ming'sUtilities, MingsUtilities, mingsutilities">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="title" content="QR Code Generator | MingsUtilities">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://utilities.ming.jp.net/web-tools/qr-code-generator">
+<meta property="og:title" content="QR Code Generator | MingsUtilities">
+<meta property="og:description" content="QR code generator.">
+<meta property="og:image" content="https://cdn.ming.jp.net/qrcode-gen/imgs/cover.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://utilities.ming.jp.net/web-tools/qr-code-generator">
+<meta name="twitter:title" content="QR Code Generator | MingsUtilities">
+<meta name="twitter:description" content="QR code generator.">
+<meta name="twitter:image" content="https://cdn.ming.jp.net/qrcode-gen/imgs/cover.png">
+<meta name="twitter:creator" content="@MingTheNoob">
+<meta name="twitter:site" content="@MingsUtilities">
+
+<link rel="icon" type="image/png" sizes="192x192" href="https://cdn.ming.jp.net/root/imgs/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://cdn.ming.jp.net/root/imgs/favicon/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.ming.jp.net/root/imgs/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.ming.jp.net/root/imgs/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cdn.ming.jp.net/root/imgs/favicon/apple-touch-icon.png">
+<link rel="shortcut icon" href="https://cdn.ming.jp.net/root/imgs/favicon/favicon.ico">
+
+<link href="https://cdn.ming.jp.net/root/css/aos.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/root/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/root/css/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/root/css/boxicons/boxicons.min.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/root/css/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/root/css/swiper-bundle.min.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/root/css/main.css" rel="stylesheet">
+<link href="https://cdn.ming.jp.net/qrcode-gen/main.css" rel="stylesheet">
+<link rel="stylesheet" href="test.css">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<title>QR Code Generator | MingsUtilities</title>
 </head>
 <body>
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h1>QR Code Generator</h1>
-        <br>
-        <div class="input-group">
-            <input type="text" id="inputBox" class="form-control qrcode-gen-input-bg-color qrcode-gen-p-input-placeholder">
-            <button class="btn btn-primary qrcode-button" type="submit" onclick="getQRCode()">Get QR Code</button>
-        </div>
-        <div id="showQrCode"></div>
-    </div>
-    <script src="main2.js"></script>
-</body>
+
+<section id="topbar" class="d-flex align-items-center noselect">
+<div class="container d-flex justify-content-center justify-content-md-between">
+<div class="contact-info d-flex align-items-center">
+<i class="bi bi-envelope d-flex align-items-center"><a href="/cdn-cgi/l/email-protection#bdcec8cdcdd2cfc9fdc8c9d4d1d4c9d4d8ce93d0d4d3da93d7cd93d3d8c9" target="_blank">Email</a></i>
+<i class="bi bi-globe d-flex align-items-center ms-4"><a href="https://blitzcream.com" target="_blank">BlitzCream</a></i>
+<i class="bi bi-exclamation-triangle-fill d-flex align-items-center ms-4"><a>WIP!</a></i>
+</div>
+<div class="social-links d-none d-md-flex align-items-center">
+<a href="https://twitter.com/MingsUtilities" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+<a href="https://discord.com/invite/WaPgUY5gd4" target="_blank" class="discord"><i class="bi bi-discord"></i></a>
+<a href="https://github.com/MingTheNoob" target="_blank" class="github"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</section>
+
+<header id="header" class="d-flex align-items-center noselect">
+<div class="container d-flex align-items-center justify-content-between">
+<h1 class="logo"><a href="https://utilities.ming.jp.net">MingsUtilities<span>.</span></a></h1>
+<nav id="navbar" class="navbar">
+<ul>
+<li><a class="nav-link scrollto" href="https://utilities.ming.jp.net">Home</a></li>
+<li><a class="nav-link scrollto" href="https://utilities.ming.jp.net/about">About</a></li>
+<li><a class="nav-link scrollto" href="https://utilities.ming.jp.net/directory">Directory</a></li>
+<li><a class="nav-link scrollto" href="https://utilities.ming.jp.net/contact">Contact</a></li>
+<li><a class="nav-link scrollto" href="https://utilities.ming.jp.net/donate">Donate</a></li>
+</ul>
+<i class="bi bi-list mobile-nav-toggle"></i>
+</nav>
+</div>
+</header>
+
+<section id="hero" class="d-flex align-items-center hero-height-adjust hero-height-adjust-main">
+<div class="container" data-aos="zoom-out" data-aos-delay="100">
+<h1>QR Code Generator<span>.</span></h1>
+<br>
+<div method="post" class="input-group">
+<input type="text" id="inputBox" class="form-control qrcode-gen-input-bg-color qrcode-gen-p-input-placeholder">
+<button class="btn btn-primary qrcode-button" type="submit" onclick="if (!window.__cfRLUnblockHandlers) return false; getQRCode()" data-cf-modified-90523c5e2f20d66518462183-="">Get QR Code</button>
+</div>
+<div id="showQrCode"></div>
+</div>
+</section>
+
+<footer id="footer">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6 footer-contact">
+<h3>MingsUtilities<span>.</span></h3>
+<p>
+<strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cdbeb8bdbda2bfb98db8b9a4a1a4b9a4a8bee3a0a4a3aae3a7bde3a3a8b9">[email&#160;protected]</a><br>
+</p>
+</div>
+<div class="col-lg-3 col-md-6 footer-links">
+<h4>Legal Stuff</h4>
+<ul>
+<li><a href="https://utilities.ming.jp.net/about">About</a></li>
+<li><a href="https://utilities.ming.jp.net/terms">Terms</a></li>
+<li><a href="https://utilities.ming.jp.net/privacy">Privacy</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links">
+<h4>Useful Links</h4>
+<ul>
+<li><a href="https://blitzcream.com">BlitzCream</a></li>
+<li><a href="https://utilities.ming.jp.net/contact">Contact</a></li>
+<li><a href="https://utilities.ming.jp.net/directory">Directory</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 footer-links">
+<h4>Socials</h4>
+<div class="social-links mt-3">
+<a href="https://twitter.com/MingsUtilities" class="twitter"><i class="bi bi-twitter"></i></a>
+<a href="https://github.com/MingTheNoob" class="github"><i class="bi bi-github"></i></a>
+<a href="https://discord.com/invite/WaPgUY5gd4" class="discord"><i class="bi bi-discord"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i>
+</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.ming.jp.net/root/js/purecounter.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/aos.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/bootstrap/bootstrap.bundle.min.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/glightbox/glightbox.min.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/isotope-layout/isotope.pkgd.min.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/swiper-bundle.min.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/noframework.waypoints.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/validate.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/root/js/main.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js' type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js' type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js' type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="https://cdn.ming.jp.net/qrcode-gen/main.js" type="90523c5e2f20d66518462183-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="90523c5e2f20d66518462183-|49" defer=""></script></body>
 </html>
