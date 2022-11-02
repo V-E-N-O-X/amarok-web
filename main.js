@@ -68,7 +68,7 @@ const templateButtons = [
               index: 2,
               urlButton: {
                 displayText: "GitHub",
-                url: `https://github.com/HyNO-IR/`,
+                url: `https://github.com/HyNO-IR/hyno-md`,
               },
             },
             {
