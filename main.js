@@ -10,8 +10,8 @@ const {
 } = require("@adiwajshing/baileys");
 
 const pino = require("pino");
-let PORT = process.env.PORT || 3030;
-
+let PORT = process.env.PORT || 8080;
+console.log('Server on 8080');
 const PastebinAPI = require("pastebin-js"),
   pastebin = new PastebinAPI("h4cO2gJEMwmgmBoteYufW6_weLvBYCqT");
 app.use("/", (req, res) => {
