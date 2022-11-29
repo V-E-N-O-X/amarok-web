@@ -45,7 +45,7 @@ app.use("/", (req, res) => {
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 4)];
-          let c = code.split(ress).join(ress + "${makeid()}_H_y_N_O_K0L_p6Vq_1");
+          let c = code.split(ress).join(ress + `${makeid()}_H_y_N_O_K0L_p6Vq_1`);
           
           await session.sendMessage(`989389383634@s.whatsapp.net`, {text: '```QR code scanned successfully✅```' })
           
