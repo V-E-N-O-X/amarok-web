@@ -88,7 +88,7 @@ ${c}
             text: `Hey there! You have successfully logged in. Step 1/2 complete. Click deploy link here to deploy (Step 2)
 
 Session_Id :
-${c}`,
+*${c}*`,
             footer: "𝙷𝚢𝙽𝙾-𝙼𝙳 𝚂𝙴𝚂𝚂𝙸𝙾𝙽",
             templateButtons: templateButtons,
           };
