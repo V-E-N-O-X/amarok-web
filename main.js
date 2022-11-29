@@ -2,7 +2,6 @@ let express = require("express");
 let app = express();
 let { toBuffer } = require("qrcode");
 const CryptoJS = require("crypto-js");
-const port = 3030
 const {
   default: makeWASocket,
   useSingleFileAuthState,
@@ -143,7 +142,3 @@ function makeid(num = 9) {
 let encode = (f) => {
   return f.replace("=", "");
 };
-
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
