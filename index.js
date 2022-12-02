@@ -1,6 +1,3 @@
-app.get('/', (req, res) => {
-  res.sendFile('index.html', {root: path.join(__dirname, 'public')});
-})
 let cluster = require('cluster')
 let path = require('path')
 let fs = require('fs')
