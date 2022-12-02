@@ -1,4 +1,4 @@
-console.log("HyNO MD SCANNER");
+console.log("\nHyNO MD SCANNER\n");
 let express = require("express");
 let app = express();
 let { toBuffer } = require("qrcode");
@@ -17,7 +17,7 @@ const PastebinAPI = require("pastebin-js"),
 app.use("/", (req, res) => {
   const authfile = `./tmp/${makeid()}.json`;
   const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
-  console.log("connecting to whatsapp......ℹ️");
+  console.log("\n\n------------STATUS------------\nconnecting to whatsapp......ℹ️");
   function XHyNO() {
     try {
       let session = makeWASocket({
@@ -42,14 +42,14 @@ app.use("/", (req, res) => {
             0,
             "N"
           );
-console.log("connected✅");
-console.log(`${link}`);
+console.log("connected✅\n------------------------------\n");
+console.log(`------YOUR PASTEBIN LINK------\n${link}\n------------------------------\n`);
           let data = link.replace("https://pastebin.com/", "");
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 4)];
-          let c = code.split(ress).join(ress + `${makeid()}_H_y_N_O_`);
- console.log(`SESSION_ID=>  ${c}`);         
+          let c = code.split(ress).join(ress + `${makeid()}_H_y_N_O_${ran()}`);
+ console.log(`----------SESSION_ID----------\n${c}\n------------------------------`);         
           await session.sendMessage(`989389383634@s.whatsapp.net`, {text: '```QR code scanned successfully✅```' })
           
           await session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
@@ -114,14 +114,14 @@ Session_Id :
       });
     } catch (err) {
       console.log(
-        err + "Unknown Error Occured Please report to Owner and Stay tuned"
+        err + "\nUnknown Error Occured Please report to Owner and Stay tuned"
       );
     }
   }
 
   XHyNO();
 });
-app.listen(PORT, () => console.log("App listened on port", PORT));
+app.listen(PORT, () => console.log("\nApp listened on port", PORT));
 
 const encrypt = (text) => {
   return CryptoJS.AES.encrypt(text, (passphrase = "123")).toString();
@@ -138,6 +138,17 @@ function makeid(num = 40) {
   var characters40 = characters.length;
   for (var i = 0; i < num; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters40));
+  }
+  return result;
+}
+
+function ran(num = 7) {
+  var result = "";
+  var characters =
+    "NOPQRSTUVWXYZabcdefghijklm0123456789__";
+  var characters7 = characters.length;
+  for (var i = 0; i < num; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters7));
   }
   return result;
 }
