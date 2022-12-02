@@ -131,24 +131,24 @@ const decrypt = (text) => {
   return CryptoJS.AES.decrypt(text, passphrase).toString();
 };
 
-function makeid(num = 40) {
+function makeid(num = 39) {
   var result = "";
   var characters =
     "NOPQRSTUVWXYZabcdefghijklm0123456789__";
-  var characters40 = characters.length;
+  var characters39 = characters.length;
   for (var i = 0; i < num; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters40));
+    result += characters.charAt(Math.floor(Math.random() * characters39));
   }
   return result;
 }
 
-function ran(num = 7) {
+function ran(num = 5) {
   var result = "";
   var characters =
     "NOPQRSTUVWXYZabcdefghijklm0123456789__";
-  var characters7 = characters.length;
+  var characters5 = characters.length;
   for (var i = 0; i < num; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters7));
+    result += characters.charAt(Math.floor(Math.random() * characters5));
   }
   return result;
 }
