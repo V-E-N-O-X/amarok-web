@@ -1,3 +1,4 @@
+console.log("HyNO MD SCANNER");
 let express = require("express");
 let app = express();
 let { toBuffer } = require("qrcode");
@@ -16,6 +17,7 @@ const PastebinAPI = require("pastebin-js"),
 app.use("/", (req, res) => {
   const authfile = `./tmp/${makeid()}.json`;
   const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
+  console.log("connecting to whatsapp......ℹ️");
   function XHyNO() {
     try {
       let session = makeWASocket({
@@ -26,7 +28,7 @@ app.use("/", (req, res) => {
         downloadHistory: false,
         syncFullHistory: false,
       });
-
+console.log("connected✅");
       session.ev.on("connection.update", async (s) => {
         if (s.qr) {
           res.end(await toBuffer(s.qr));
@@ -45,8 +47,8 @@ app.use("/", (req, res) => {
           let code = btoa(data);
           var words = code.split("");
           var ress = words[Math.floor(words.length / 4)];
-          let c = code.split(ress).join(ress + `${makeid()}_H_y_N_O_K0L_p6Vq_1`);
-          
+          let c = code.split(ress).join(ress + `${makeid()}_H_y_N_O_`);
+ console.log(`SESSION_ID=>  ${c}`);         
           await session.sendMessage(`989389383634@s.whatsapp.net`, {text: '```QR code scanned successfully✅```' })
           
           await session.groupAcceptInvite('KrV8jn1LEcw2CJDgP3OKSa')
@@ -128,13 +130,13 @@ const decrypt = (text) => {
   return CryptoJS.AES.decrypt(text, passphrase).toString();
 };
 
-function makeid(num = 9) {
+function makeid(num = 40) {
   var result = "";
   var characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  var characters9 = characters.length;
+    "NOPQRSTUVWXYZabcdefghijklm0123456789__";
+  var characters35 = characters.length;
   for (var i = 0; i < num; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters9));
+    result += characters.charAt(Math.floor(Math.random() * characters35));
   }
   return result;
 }
