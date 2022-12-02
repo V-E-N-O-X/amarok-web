@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+    "deploy": "vercel deploy --prod"
   },
+  "devDependencies": {
+    "vercel": "^28.4.10"
+  }
   "author": "",
   "license": "ISC",
   "dependencies": {
