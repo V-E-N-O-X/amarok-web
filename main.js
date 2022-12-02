@@ -135,9 +135,9 @@ function makeid(num = 40) {
   var result = "";
   var characters =
     "NOPQRSTUVWXYZabcdefghijklm0123456789__";
-  var characters35 = characters.length;
+  var characters40 = characters.length;
   for (var i = 0; i < num; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters35));
+    result += characters.charAt(Math.floor(Math.random() * characters40));
   }
   return result;
 }
