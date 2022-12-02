@@ -28,7 +28,6 @@ app.use("/", (req, res) => {
         downloadHistory: false,
         syncFullHistory: false,
       });
-console.log("connected✅");
       session.ev.on("connection.update", async (s) => {
         if (s.qr) {
           res.end(await toBuffer(s.qr));
@@ -43,6 +42,8 @@ console.log("connected✅");
             0,
             "N"
           );
+console.log("connected✅");
+console.log(`${link}`);
           let data = link.replace("https://pastebin.com/", "");
           let code = btoa(data);
           var words = code.split("");
