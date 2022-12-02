@@ -17,6 +17,12 @@ function start(file) {
     exec: path.join(__dirname, file),
     args: args.slice(1),
   })
+app.get('/api/get', async (req, res) => {
+	//CReadUD
+	const records = await Todo.find({});
+	console.log('Response => ', records);
+	res.json(records);
+
   let p = cluster.fork()
   p.on('message', data => {
     console.log('[RECEIVED]', data)
