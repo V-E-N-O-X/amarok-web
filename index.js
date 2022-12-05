@@ -17,7 +17,6 @@ function start(file) {
     exec: path.join(__dirname, file),
     args: args.slice(1),
   })
-
   let p = cluster.fork()
   p.on('message', data => {
     console.log('[RECEIVED]', data)
@@ -43,16 +42,6 @@ function start(file) {
   })
 
 }
-const express = require('express')
-const PORT = process.env.PORT || 8080;
-var app = express();
 
-var main = require('./main');
-
-app.use('/', main);
-
-app.listen(PORT, () => {
-    console.log(`Server Run on port ${PORT}`)
-});
 
 start('main.js')
