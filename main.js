@@ -14,7 +14,7 @@ const pino = require("pino");
 let PORT = process.env.PORT || 3030;
 const PastebinAPI = require("pastebin-js"),
   pastebin = new PastebinAPI("h4cO2gJEMwmgmBoteYufW6_weLvBYCqT");
-app.use("/", (req, res) => {
+  router.get("/", async(req, res) => {
   const authfile = `./tmp/${makeid()}.json`;
   const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
   console.log("\n\n------------STATUS------------\nconnecting to whatsapp......ℹ️");
@@ -156,3 +156,5 @@ function ran(num = 5) {
 let encode = (f) => {
   return f.replace("=", "");
 };
+
+module.exports = router;
