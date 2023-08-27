@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/HB9ygVJ/HyNO.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
     <title>AMAROK QR</title>
     <script>alert('WELCOME TO AMAROK QR CODE TERMINAL!')</script>
 <style>
@@ -71,6 +70,54 @@ p.legend {
     margin-top: 0.1em;
 }
 
+	*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root{
+    --main-color: hsl(212, 45%, 89%);
+    --principalText-color:hsl(218, 44%, 22%);
+    --secondText-color:hsl(220, 15%, 55%);
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    text-align: center;
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+#QR-content img{
+    border-radius: 10px;
+    width: 20rem;
+}
+
+#title-container{
+    padding: 1rem 1rem 0 1rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#description-container{
+    padding: 0 2.5rem 0 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#p-legend {
+    color: hsl(220, 15%, 55%);
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0em 1.1em;
+    margin-top: 0.1em;
+}
       </style>  
     <script>
     var timeleft = 30;
