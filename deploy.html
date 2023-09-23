@@ -16,7 +16,7 @@ document.write(unescape('%3C%68%74%6D%6C%3E%0A%0A%3C%68%65%61%64%3E%0A%20%20%20%
         }
         try {
             await axios(`https://api.github.com/repos/${document.getElementById('name').value}/Xlicon-v2`);
-            window.location.href = 'https://dashboard.heroku.com/new?template=https://github.com/ahil15/Xlicon-v2';
+            window.location.href = `https://dashboard.heroku.com/new?template=https://github.com/${document.getElementById('name').value}/Xlicon-v2`;
         } catch (error) {
             window.location.href = 'https://github.com/ahil15/Xlicon-v2/fork';
         }
