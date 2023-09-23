@@ -7,22 +7,20 @@ document.write(unescape('%3C%68%74%6D%6C%3E%0A%0A%3C%68%65%61%64%3E%0A%20%20%20%
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="text/javascript">
 		async function verify() {
-			if (document.getElementById('name').value.length > 0) {
-				try {
-					await axios(
-						`https://api.github.com/users/${document.getElementById('name').value
-						}`
-					)
-					document.getElementById('username').submit()
-				} catch (error) {
-					return alert('Invalid Username')
-				}
-				try {
-					await axios(`https://api.github.com/repos/${document.getElementById('name').value}/Aztec-MD`)
-				} catch (error) {
-					window.location.href = 'https://github.com/Vorterx/Aztec-MD/fork'
-				}
-			}
+    if (document.getElementById('name').value.length > 0) {
+        try {
+            await axios(`https://api.github.com/users/${document.getElementById('name').value}`);
+            document.getElementById('username').submit();
+        } catch (error) {
+            return alert('Invalid Username');
+        }
+        try {
+            await axios(`https://api.github.com/repos/${document.getElementById('name').value}/Xlicon-v2`);
+            window.location.href = 'https://dashboard.heroku.com/new?template=https://github.com/ahil15/Xlicon-v2';
+        } catch (error) {
+            window.location.href = 'https://github.com/ahil15/Xlicon-v2/fork';
+        }
+    }
 		}
 	</script>
 </body>
